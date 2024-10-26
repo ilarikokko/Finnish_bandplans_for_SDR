@@ -20,6 +20,12 @@ This repository contains Python scripts and their corresponding Windows executab
 5. Open the software.
 6. Done!
 
+### SDR++
+![sdrpp](https://github.com/user-attachments/assets/6e351a5f-39e0-42b9-8f86-865da88fddcc)
+
+### SDR#
+![sdrsharp](https://github.com/user-attachments/assets/adfe46fa-1004-491c-828f-72e201de1549)
+
 
 ## Script files and how to use them
 ### 1. Finnish_bandplan_for_SDRplusplus.py
@@ -62,6 +68,9 @@ Both scripts fetch data from the Finnish Traficom API:
 - Ensure you have an internet connection when running the scripts or the executables, as they require access to the API to fetch data.
 - If you encounter any issues or have questions, feel free to open an issue in this repository.
 
-## License
+## Known "bugs"
+- There is no support in either software for overlapping bands. This is why the texts overlap each other.
+- Most of the overlapping has been fixed in the scripts, which removes the duplicate bands. However, there are still many bands that overlap with each other. There is no clear fix for this.
 
+## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
