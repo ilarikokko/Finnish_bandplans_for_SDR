@@ -1,9 +1,27 @@
-# Finnish Bandplan for the SDR Software
+# Finnish Traficom Bandplan for the SDR Software
 
 ## What is it?
 This repository contains Python scripts and their corresponding Windows executables for fetching and creating bandplans from the Finnish Traficom API for use with SDR++ and SDR# software. The scripts fetch bandplan data, process it, and save it in the appropriate formats for each software.
 
-## Files & how to use
+**There are also ready-made files, so you don't have to use scripts if you don't want to!** I added the scripts to this repository just because, I don't know how often Traficom updates the frequency distribution table (maybe once every ten years :D?).
+
+## Ready-made files & where to put them
+### When using SDR++ (Windows)
+1. Download `finland.json`.
+2. Move the file to the `\res\bandplans\` folder (Here you should find other countries json files).
+3. Open the software and change the Band Plan to "Finland"
+4. Done!
+
+### When using SDR# (Windows)
+1. Download `BandPlan.xml`.
+2. Go to the root folder of the SDR# (Same folder where you can find the SDRSharp.exe).
+3. Make a backup of the original band plan file or rename it something like this `BandPlan.backup`.
+4. Move the `BandPlan.xml` file to this folder.
+5. Open the software.
+6. Done!
+
+
+## Script files and how to use them
 ### 1. Finnish_bandplan_for_SDRplusplus.py
 - **Description**: The "Linux" Python version of the SDR++ bandplan script.
 - **Usage**:
@@ -35,7 +53,6 @@ This repository contains Python scripts and their corresponding Windows executab
     ```bash
     pip install requests
     ```
-- **No additional libraries are required for the executables**; they are standalone and bundled with the necessary dependencies.
 
 ## API Used
 Both scripts fetch data from the Finnish Traficom API:
