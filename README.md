@@ -7,13 +7,13 @@ This repository contains Python scripts and their corresponding Windows executab
 
 ## Ready-made files & where to put them
 ### When using SDR++ (Windows)
-1. Download `finland.json`.
+1. Download [finland.json](https://github.com/ilarikokko/Finnish_bandplans_for_SDR/releases/download/v1.0.0/finland.json).
 2. Move the file to the `\res\bandplans\` folder (Here you should find other countries json files).
 3. Open the software and change the Band Plan to "Finland"
 4. Done!
 
 ### When using SDR# (Windows)
-1. Download `BandPlan.xml`.
+1. Download [BandPlan.xml](https://github.com/ilarikokko/Finnish_bandplans_for_SDR/releases/download/v1.0.0/BandPlan.xml).
 2. Go to the root folder of the SDR# (Same folder where you can find the SDRSharp.exe).
 3. Make a backup of the original band plan file or rename it something like this `BandPlan.backup`.
 4. Move the `BandPlan.xml` file to this folder.
