@@ -30,26 +30,26 @@ I added the scripts to this repository just because, I don't know how often Traf
 
 
 ## Python scripts, EXE files & how to use them?
-### 1. Finnish_bandplan_for_SDRplusplus_v1.2.0.py
+### 1. Finnish_bandplan_for_SDRplusplus_1.2.0.py
 - **Description**: The "Linux" Python version of the SDR++ bandplan script.
 - **Usage**:
-    - Run the script in a Python environment `python3 ./Finnish_bandplan_for_SDRplusplus_v1.2.0.py` with the required libraries installed (read "Requirements for Python scripts").
+    - Run the script in a Python environment `python3 ./Finnish_bandplan_for_SDRplusplus_1.2.0.py` with the required libraries installed (read "Requirements for Python scripts").
     - The output will be saved as `finland.json`.
 
-### 2. Finnish_bandplan_for_SDRplusplus_v1.2.0.exe
+### 2. Finnish_bandplan_for_SDRplusplus_1.2.0.exe
 - **Description**: The Windows executable version of the SDR++ bandplan script.
 - **Usage**:
     - Double-click the executable to run it. 
     - A terminal window will open, showing the progress of fetching and processing the bandplan. 
     - The output will be saved as `finland.json`.
 
-### 3. Finnish_bandplan_for_SDRsharp_v1.2.0.py
+### 3. Finnish_bandplan_for_SDRsharp_1.2.0.py
 - **Description**:The "Linux" Python version of the SDR# bandplan script.
 - **Usage**:
-    - Run the script in a Python environment `python3 ./Finnish_bandplan_for_SDRsharp_v1.2.0.py` with the required libraries installed (read "Requirements for Python scripts").
+    - Run the script in a Python environment `python3 ./Finnish_bandplan_for_SDRsharp_1.2.0.py` with the required libraries installed (read "Requirements for Python scripts").
     - The output will be saved as `BandPlan.xml`.
 
-### 4. Finnish_bandplan_for_SDRsharp_v1.2.0.exe
+### 4. Finnish_bandplan_for_SDRsharp_1.2.0.exe
 - **Description**: The Windows executable version of the SDR# bandplan script.
 - **Usage**:
     - Double-click the executable to run it.
@@ -60,8 +60,8 @@ I added the scripts to this repository just because, I don't know how often Traf
 - Both exe's are based of provided Python scripts.
 - Both EXE files are made with [PyInstaller](https://pyinstaller.org/en/stable/)
 - In my case, the exact commands were:
-    - `python -m PyInstaller --onefile --name "Finnish_bandplan_for_SDRplusplus_v1.2.0" .\Finnish_bandplan_for_SDRplusplus_v1.2.0.py`
-    - `python -m PyInstaller --onefile --name "Finnish_bandplan_for_SDRsharp_v1.2.0" .\Finnish_bandplan_for_SDRsharp_v1.2.0.py`
+    - `python -m PyInstaller --onefile --name "Finnish_bandplan_for_SDRplusplus_1.2.0" .\Finnish_bandplan_for_SDRplusplus_1.2.0.py`
+    - `python -m PyInstaller --onefile --name "Finnish_bandplan_for_SDRsharp_1.2.0" .\Finnish_bandplan_for_SDRsharp_1.2.0.py`
 
 ## Requirements for Python scripts
 - **Python**: Make sure you have Python installed if you plan to run the `.py` scripts. The scripts require the `requests` library. You can install it using:
