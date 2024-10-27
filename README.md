@@ -20,18 +20,18 @@ This repository contains Python scripts and their corresponding Windows executab
 5. Open the software.
 6. Done!
 
-### SDR++
+### Example SDR++
 ![sdrpp](https://github.com/user-attachments/assets/6e351a5f-39e0-42b9-8f86-865da88fddcc)
 
-### SDR#
+### Example SDR#
 ![sdrsharp](https://github.com/user-attachments/assets/adfe46fa-1004-491c-828f-72e201de1549)
 
 
-## Script files and how to use them
+## Python scripts, EXE files & how to use them?
 ### 1. Finnish_bandplan_for_SDRplusplus.py
 - **Description**: The "Linux" Python version of the SDR++ bandplan script.
 - **Usage**:
-    - Run the script in a Python environment `python3 ./Finnish_bandplan_for_SDRplusplus.py` with the required libraries installed (read Requirements for Python scripts).
+    - Run the script in a Python environment `python3 ./Finnish_bandplan_for_SDRplusplus.py` with the required libraries installed (read "Requirements for Python scripts").
     - The output will be saved as `finland.json`.
 
 ### 2. Finnish_bandplan_for_SDRplusplus.exe
@@ -44,7 +44,7 @@ This repository contains Python scripts and their corresponding Windows executab
 ### 3. Finnish_bandplan_for_SDRsharp.py
 - **Description**:The "Linux" Python version of the SDR# bandplan script.
 - **Usage**:
-    - Run the script in a Python environment `python3 ./Finnish_bandplan_for_SDRsharp.py` with the required libraries installed (read Requirements for Python scripts).
+    - Run the script in a Python environment `python3 ./Finnish_bandplan_for_SDRsharp.py` with the required libraries installed (read "Requirements for Python scripts").
     - The output will be saved as `BandPlan.xml`.
 
 ### 4. Finnish_bandplan_for_SDRsharp.exe
@@ -54,14 +54,21 @@ This repository contains Python scripts and their corresponding Windows executab
     - A terminal window will open, showing the progress of fetching and processing the bandplan.
     - The output will be saved as `BandPlan.xml`.
 
+## How are the EXE files made and what do they contain?
+- Both exe's are based of provided Python scripts.
+- Both EXE files are made with [PyInstaller](https://pyinstaller.org/en/stable/)
+- In my case, the exact commands were:
+    - `python -m PyInstaller --onefile --name "Finnish_bandplan_for_SDRplusplus" .\Finnish_bandplan_for_SDRplusplus.py`
+    - `python -m PyInstaller --onefile --name "Finnish_bandplan_for_SDRsharp" .\Finnish_bandplan_for_SDRsharp.py`
+
 ## Requirements for Python scripts
 - **Python**: Make sure you have Python installed if you plan to run the `.py` scripts. The scripts require the `requests` library. You can install it using:
     ```bash
     pip install requests
     ```
 
-## API Used
-Both scripts fetch data from the Finnish Traficom API:
+## API
+Both scripts fetch data from the Traficom public API:
 - **API URL**: https://opendata.traficom.fi/api/v13/Taajuusjakotaulukko_fin
 
 ## Notes
