@@ -79,9 +79,16 @@ Both scripts fetch data from the Traficom public API:
 
 ## Changelog:
 - v1.2.0 (Current version)
-    - Pushed the whole project directory to GIT
-    - Fixed band overlapping
-    - New folder structure
+    - **Non-Overlapping Frequency Splitting:**
+    Added a function to handle overlapping frequency ranges by splitting them into non-overlapping sub-ranges.
+    This ensures that multiple usage types are represented in each range without overlapping.
+
+    - **Usage Type Separator Update:**
+    Modified the output format to display multiple usage types with a | separator instead of a comma (,).
+  
+    - **Merged Continuous Bands:**
+    Enhanced the scripts to merge consecutive frequency bands that share the same usage type(s) into a single continuous range.
+    For example, adjacent bands with the same usage are now consolidated into one band entry instead of being represented as separate blocks.
 
 - v1.0.0
     -  Initial release
