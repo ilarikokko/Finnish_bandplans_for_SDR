@@ -3,7 +3,9 @@
 ## What is it?
 This repository contains Python scripts and their corresponding Windows executables for fetching and creating bandplans from the Finnish Traficom API for use with SDR++ and SDR# software. The scripts fetch bandplan data, process it, and save it in the appropriate formats for each software.
 
-**There are also ready-made files, so you don't have to use scripts if you don't want to!** I added the scripts to this repository just because, I don't know how often Traficom updates the frequency distribution table (maybe once every ten years :D?).
+**There are also ready-made files, so you don't have to use scripts if you don't want to!** 
+
+I added the scripts to this repository just because, I don't know how often Traficom updates the frequency distribution table (maybe once every ten years :D?).
 
 ## Ready-made files & where to put them
 ### When using SDR++ (Windows)
